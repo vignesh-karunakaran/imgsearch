@@ -12,7 +12,6 @@ class App extends React.Component {
               }
         }).then((res) => {
             res.json().then((res) => {
-                console.log(res.results);
                 this.setState({images: res.results});
             })
         });
